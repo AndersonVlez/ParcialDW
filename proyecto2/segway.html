@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Trip Around the USA on a Segway</title>
-    <link id="template-file" href="index.html" rel="import" />
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <style>
         .nav {
             list-style-type: none;
@@ -17,19 +18,20 @@
             background-color: #333;
         }
 
-        li {
+        #lista {
             float: left;
         }
 
-        li a {
+        #lista a {
             display: block;
             color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        li a:hover:not(.active) {
+        #lista a:hover:not(.active) {
             background-color: #111;
         }
 
@@ -56,47 +58,122 @@
             font-size: 36px;
             color: rgb(43, 89, 129);
         }
+
+        .parrafo {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .lista {
+            background: rgb(43, 89, 129);
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .lista li {
+            background: rgb(121, 173, 219);
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+        .piepagina {
+            color: white;
+            width: 100%;
+            height: 250px;
+            background: #333;
+        }
+
+        .pie_col1 {
+            position: absolute;
+            left: 10%;
+            margin-top: 35px;
+        }
+
+        .pie_col1>i {
+            float: left;
+            margin-left: 30px;
+        }
+
+        .pie_col2 {
+            margin-left: 42%;
+            margin-top: 25px;
+            float: left;
+        }
+
+        .pie_col3 {
+            margin-left: 85%;
+            float: left;
+            margin-top: -40px;
+        }
+
+        .redes {
+            padding-top: 7px;
+            margin-left: 91%;
+        }
+
+        .fa-facebook {
+            font-size: 2em;
+            margin-left: 15%;
+        }
+        .fa-twitter-square:before {
+            font-size: 2em;
+        }
     </style>
-    
+
 
 </head>
 
 <body>
     <ul class="nav">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="#">unir1</a></li>
-        <li><a href="segway.html">Segway</a></li>
-        <li><a href="#">unir</a></li>
+        <li id="lista"><a class="active" href="proyecto1/proyecto1.html">Proyecto1</a></li>
+        <li id="lista"><a href="segway.html">Proyecto2</a></li>
+        <li id="lista"><a href="proyecto3/proyecto3.html">Proyecto3</a></li>
     </ul>
     <div class="container">
         <h1 class="title">Segway'n USA</h1>
-        <p>
+        <p class="parrafo">
             Documenting my trip around the US on my very own Segway!
         </p>
         <h2>August 20, 2012</h2>
-        <img id="segway" width="460px" src="images/segway.jpg">
-        <p>
+        <img id="segway" src="images/segway.jpg">
+        <p class="parrafo">
             Well I made it 1200 miles already, and I passed
             through some interesting places on the way:
         </p>
-        <ol>
+        <ol class="lista">
             <li>Walla Walla, WA</li>
             <li>Magic City, ID</li>
-            <li>Bountiful, UT
-            <li>
+            <li>Bountiful, UT</li>
             <li>Last Chance, CO</li>
-            <li>Truth or Consequences, NM
-            <li>
+            <li>Truth or Consequences, NM</li>
             <li>Why, AZ</li>
         </ol>
     </div>
-    <h2>June 2, 2012</h2>
-    <img href="images/segway1.jpg">
-    <p>
-        My first day of the trip! I can't believe I finally got
-        everything packed and ready to go. Because I'm on a Segway,
-        I wasn't able to bring a whole lot with me:
-    </p>
-    </budy>
-
+    <div class="container">
+        <h2>June 2, 2012</h2>
+        <img id="segway" src="images/segway2.jpg">
+        <p class="parrafo">
+            My first day of the trip! I can't believe I finally got
+            everything packed and ready to go. Because I'm on a Segway,
+            I wasn't able to bring a whole lot with me:
+        </p>
+    </div>
+    <!-- footer -->
+    <div class="piepagina">
+        <div class="pie_col1">
+            <h3>Parcial</h3>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="pie_col2">
+            <h3>Contacto</h3>
+            <h4>Tel: 300 4567 123</h4>
+            <h4>Correo: poli@poligran.edu.co</h4>
+        </div>
+        <div class="pie_col3">
+            <h4>Atencion al cliente</h4>
+            <h4>Quienes somos</h4>
+        </div>
+    </div>
+</body>
 </html>
