@@ -10,6 +10,13 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <style>
+        body {
+            background-color: #80ED99;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Menu de navegación */
         .nav {
             list-style-type: none;
             margin: 0;
@@ -38,6 +45,7 @@
         .active {
             background-color: rgb(43, 89, 129);
         }
+        /* fin menú de navegación */
 
         #segway {
             display: block;
@@ -56,12 +64,15 @@
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 36px;
-            color: rgb(43, 89, 129);
+            color: #000;
+            background-color: #22577A;
+            padding: 30px;
         }
 
         .parrafo {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
+            background-color: #00FFFF;
         }
 
         .lista {
@@ -118,6 +129,10 @@
         .fa-twitter-square:before {
             font-size: 2em;
         }
+
+        .subtitulo {
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 
 
@@ -125,16 +140,16 @@
 
 <body>
     <ul class="nav">
-        <li id="lista"><a class="active" href="proyecto1/proyecto1.html">Proyecto1</a></li>
+        <li id="lista"><a class="active" href="../proyecto1/proyecto1.html">Proyecto1</a></li>
         <li id="lista"><a href="segway.html">Proyecto2</a></li>
-        <li id="lista"><a href="proyecto3/proyecto3.html">Proyecto3</a></li>
+        <li id="lista"><a href="../proyecto3/proyecto3.html">Proyecto3</a></li>
     </ul>
+    <h1 class="title">Segway'n USA</h1>
     <div class="container">
-        <h1 class="title">Segway'n USA</h1>
         <p class="parrafo">
             Documenting my trip around the US on my very own Segway!
         </p>
-        <h2>August 20, 2012</h2>
+        <h2 class="subtitulo">August 20, 2012</h2>
         <img id="segway" src="images/segway.jpg">
         <p class="parrafo">
             Well I made it 1200 miles already, and I passed
@@ -150,7 +165,7 @@
         </ol>
     </div>
     <div class="container">
-        <h2>June 2, 2012</h2>
+        <h2 class="subtitulo">June 2, 2012</h2>
         <img id="segway" src="images/segway2.jpg">
         <p class="parrafo">
             My first day of the trip! I can't believe I finally got
