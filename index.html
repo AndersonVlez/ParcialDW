@@ -7,11 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        body {
+            background-color: #80ED99;
+        }
         .nav {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
+            height: 50px;
             background-color: #333;
         }
 
@@ -29,20 +40,117 @@
 
         li a:hover:not(.active) {
             background-color: #111;
+            height: 50px;
         }
 
         .active {
             background-color: rgb(43, 89, 129);
         }
+
+        .piepagina {
+            color: white;
+            width: 100%;
+            height: 120px;
+            background: #333;
+        }
+
+        .pie_col1 {
+            position: absolute;
+            left: 10%;
+            margin-top: 35px;
+        }
+
+        .pie_col1 > i {
+            float: left;
+            margin-left: 30px;
+        }
+
+        .pie_col2 {
+            margin-left: 42%;
+            margin-top: 25px;
+            float: left;
+        }
+
+        .pie_col3 {
+            margin-left: 85%;
+            float: left;
+            margin-top: -40px;
+        }
+
+        .redes {
+            padding-top: 7px;
+            margin-left: 91%;
+        }
+
+        .fa-facebook {
+            font-size: 2em;
+            margin-left: 15%;
+        }
+
+        .fa-twitter-square:before {
+            font-size: 2em;
+        }
+
     </style>
 </head>
 
 <body>
     <ul class="nav">
-        <li><a class="active" href="proyecto1/mundo.html">Proyecto1</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyecto1/proyecto1.html">Proyecto1</a></li>
         <li><a href="proyecto2/segway.html">Proyecto2</a></li>
         <li><a href="proyecto3/proyecto3.html">Proyecto3</a></li>
     </ul>
+    <br />
+    <br />
+    <h1>Parcial 1 Desarrollo Web</h1>
+    <br />
+    <br />
+    <br />
+    <h2>Por:</h2>
+    <h3>Wilton andres acuña requena</h3>
+    <h3>Anderson Velez usuga</h3>
+    <br />
+    <br />
+    <br />
+    <h2>Para:</h2>
+    <h3>Jonathan Berthel Castro</h3>
+    <br />
+    <br />
+    <br />
+    <h2>Asignatura:</h2>
+    <h3>Desarrollo Web</h3>
+    <br />
+    <br />
+    <br />
+    <h2>Intitucion:</h2>
+    <h3>Politécnico GranColombiano</h3>
+    <br />
+    <br />
+    <br />
+    <h2>Fecha:</h2>
+    <h3>17 de Septiembre del 2021</h3>
+    <br />
+    <br />
+    <!--Pie de pagina-->
+    <div class="piepagina">
+        <div class="pie_col1">
+            <h3>Parcial</h3>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+
+        <div class="pie_col2">
+            <h3>Contacto</h3>
+            <h4>Tel: 300 4567 123</h4>
+            <h4>Correo: poli@poligran.edu.co</h4>
+        </div>
+
+        <div class="pie_col3">
+            <h4>Atencion al cliente</h4>
+            <h4>Quienes somos</h4>
+        </div>
+    </div>
 
 </body>
 
